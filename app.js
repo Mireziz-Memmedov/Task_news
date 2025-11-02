@@ -10,7 +10,7 @@ $(document).ready(function () {
                 console.log(data);
                 
 
-                if (Array.isArray(data.articles)) {
+                if (Array.isArray(data.news)) {
                     data.articles.forEach(item => {
                         const box = document.createElement('div');
                         box.className = 'col-md-4';
@@ -45,7 +45,7 @@ $(document).ready(function () {
             let data = await responce.json();
             console.log(data);
 
-            if (Array.isArray(data.articles)) {
+            if (Array.isArray(data.news)) {
                 data.articles.forEach(item => {
                     const box = document.createElement('div');
                     box.className = 'col-md-4';
